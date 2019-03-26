@@ -34,7 +34,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="315" height="70"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in to your account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCS-vu-SES">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in to your account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fCS-vu-SES">
                                         <rect key="frame" x="0.0" y="75" width="155.33333333333334" height="24"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                                         <color key="textColor" red="0.24313725489999999" green="0.2901960784" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -55,16 +55,17 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iHk-AX-mQU">
                                 <rect key="frame" x="0.0" y="116" width="375" height="567"/>
                                 <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cj7-qc-0as">
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WMr-PI-Xh3">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="469"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6og-f3-dFM">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ie4-du-mMJ">
                                             <size key="itemSize" width="50" height="50"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5U1-UB-vFe">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1ei-co-Uzr">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -74,8 +75,8 @@
                                             </collectionViewCell>
                                         </cells>
                                         <connections>
-                                            <outlet property="dataSource" destination="zwr-46-xea" id="qnj-5t-b6H"/>
-                                            <outlet property="delegate" destination="zwr-46-xea" id="bUb-It-d4c"/>
+                                            <outlet property="dataSource" destination="zwr-46-xea" id="1yN-29-4U1"/>
+                                            <outlet property="delegate" destination="zwr-46-xea" id="05Z-63-rbV"/>
                                         </connections>
                                     </collectionView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5GA-Q0-QlS">
@@ -91,9 +92,13 @@
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="WMr-PI-Xh3" firstAttribute="top" secondItem="iHk-AX-mQU" secondAttribute="top" id="JOQ-4E-d5I"/>
+                                    <constraint firstItem="5GA-Q0-QlS" firstAttribute="top" secondItem="WMr-PI-Xh3" secondAttribute="bottom" id="TmE-dY-zQe"/>
                                     <constraint firstItem="5GA-Q0-QlS" firstAttribute="height" secondItem="iHk-AX-mQU" secondAttribute="height" multiplier="34/567" id="VK0-2f-eGx"/>
                                     <constraint firstItem="YDw-px-dDW" firstAttribute="height" secondItem="iHk-AX-mQU" secondAttribute="height" multiplier="58/567" id="Ylz-KU-fKP"/>
+                                    <constraint firstItem="WMr-PI-Xh3" firstAttribute="leading" secondItem="iHk-AX-mQU" secondAttribute="leading" id="h3J-Mc-mPO"/>
                                     <constraint firstItem="ep6-zz-8fl" firstAttribute="height" secondItem="iHk-AX-mQU" secondAttribute="height" multiplier="6/567" id="mEM-dF-LKL"/>
+                                    <constraint firstAttribute="trailing" secondItem="WMr-PI-Xh3" secondAttribute="trailing" id="zWJ-Ws-mnL"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wNU-cW-50a">
@@ -105,6 +110,11 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="LOGIN"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xk5-WZ-fYv">
                                         <rect key="frame" x="47.666666666666686" y="50" width="220" height="15"/>
@@ -148,7 +158,7 @@
                         <viewLayoutGuide key="safeArea" id="S58-OI-c1e"/>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="Cj7-qc-0as" id="Tkx-gD-ogq"/>
+                        <outlet property="collectionView" destination="WMr-PI-Xh3" id="MVd-Dq-D3M"/>
                         <outlet property="pageControl" destination="ep6-zz-8fl" id="zB0-aE-4rT"/>
                     </connections>
                 </viewController>
