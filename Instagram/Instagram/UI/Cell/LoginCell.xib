@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xsz-s6-BB9" customClass="LoginCell" customModule="Instagram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="469"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="469"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Uhi-fh-WZc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="469"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fz3-xb-Xh2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="tAK-pT-Ag1">
+                                        <rect key="frame" x="28.5" y="0.0" width="318" height="70"/>
+                                        <string key="text">Get a new experience
+of imagination</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" red="0.22745098039215686" green="0.82352941176470584" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="tAK-pT-Ag1" firstAttribute="centerY" secondItem="fz3-xb-Xh2" secondAttribute="centerY" id="CJN-q1-1Sf"/>
+                                    <constraint firstItem="tAK-pT-Ag1" firstAttribute="centerX" secondItem="fz3-xb-Xh2" secondAttribute="centerX" id="HgM-b6-SQI"/>
+                                    <constraint firstItem="tAK-pT-Ag1" firstAttribute="width" secondItem="fz3-xb-Xh2" secondAttribute="width" multiplier="318/375" id="Kq5-yq-I2i"/>
+                                    <constraint firstItem="tAK-pT-Ag1" firstAttribute="height" secondItem="fz3-xb-Xh2" secondAttribute="height" id="YD5-Ip-L91"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PnN-dl-nnI">
+                                <rect key="frame" x="0.0" y="70" width="375" height="38"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5lL-Yr-Rgx">
+                                <rect key="frame" x="0.0" y="108" width="375" height="361"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5lL-Yr-Rgx" secondAttribute="trailing" id="12T-iI-wTR"/>
+                            <constraint firstItem="5lL-Yr-Rgx" firstAttribute="leading" secondItem="Uhi-fh-WZc" secondAttribute="leading" id="BbM-Z5-JzK"/>
+                            <constraint firstItem="PnN-dl-nnI" firstAttribute="height" secondItem="Uhi-fh-WZc" secondAttribute="height" multiplier="38/469" id="KhJ-EV-N8l"/>
+                            <constraint firstAttribute="bottom" secondItem="5lL-Yr-Rgx" secondAttribute="bottom" id="Kxg-N9-PzG"/>
+                            <constraint firstItem="fz3-xb-Xh2" firstAttribute="height" secondItem="Uhi-fh-WZc" secondAttribute="height" multiplier="70/469" id="MMz-0j-FJ0"/>
+                            <constraint firstItem="5lL-Yr-Rgx" firstAttribute="top" secondItem="PnN-dl-nnI" secondAttribute="bottom" id="TLY-8L-CHE"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Uhi-fh-WZc" firstAttribute="leading" secondItem="xsz-s6-BB9" secondAttribute="leading" id="CHz-0q-PtE"/>
+                <constraint firstItem="Uhi-fh-WZc" firstAttribute="top" secondItem="xsz-s6-BB9" secondAttribute="top" id="MGt-do-DGs"/>
+                <constraint firstAttribute="trailing" secondItem="Uhi-fh-WZc" secondAttribute="trailing" id="c7B-g7-EVp"/>
+                <constraint firstAttribute="bottom" secondItem="Uhi-fh-WZc" secondAttribute="bottom" id="nZm-rM-uWm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ccP-cd-KaR"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="tAK-pT-Ag1" id="CM9-6D-luE"/>
+                <outlet property="imageLogin" destination="5lL-Yr-Rgx" id="zeC-G2-2Er"/>
+            </connections>
+            <point key="canvasLocation" x="585.5" y="101.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

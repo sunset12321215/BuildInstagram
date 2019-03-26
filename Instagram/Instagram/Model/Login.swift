@@ -12,11 +12,3 @@ struct Login {
     let description: String
     let image: String
 }
-
-extension Login {
-    init() {
-        self.init(description: "",
-                  image: ""
-        )
-    }
-}
