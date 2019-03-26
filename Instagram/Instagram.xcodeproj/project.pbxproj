@@ -10,6 +10,9 @@
 		0426F023224A18980070DCD9 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0426F022224A18980070DCD9 /* UIView+.swift */; };
 		042AFDB82248EF3C00409850 /* LoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AFDB62248EF3C00409850 /* LoginCell.swift */; };
 		042AFDB92248EF3C00409850 /* LoginCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042AFDB72248EF3C00409850 /* LoginCell.xib */; };
+		043979B8224A97D400C5C1AA /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043979B7224A97D400C5C1AA /* TabBar.storyboard */; };
+		043979BA224A991600C5C1AA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043979B9224A991600C5C1AA /* Home.storyboard */; };
+		043979BE224A9A6900C5C1AA /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043979BD224A9A6900C5C1AA /* Search.storyboard */; };
 		043F57BE2247B51B00413C8A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F57BD2247B51B00413C8A /* Login.swift */; };
 		04ADEF8E22463D1400F9E2EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADEF8D22463D1400F9E2EA /* AppDelegate.swift */; };
 		04ADEF9022463D1400F9E2EA /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADEF8F22463D1400F9E2EA /* LogInViewController.swift */; };
@@ -24,6 +27,9 @@
 		0426F022224A18980070DCD9 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		042AFDB62248EF3C00409850 /* LoginCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCell.swift; sourceTree = "<group>"; };
 		042AFDB72248EF3C00409850 /* LoginCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginCell.xib; sourceTree = "<group>"; };
+		043979B7224A97D400C5C1AA /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		043979B9224A991600C5C1AA /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		043979BD224A9A6900C5C1AA /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		043F57BD2247B51B00413C8A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		04ADEF8A22463D1400F9E2EA /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ADEF8D22463D1400F9E2EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +67,9 @@
 			isa = PBXGroup;
 			children = (
 				04ADEF9F224644EE00F9E2EA /* Start.storyboard */,
+				043979B7224A97D400C5C1AA /* TabBar.storyboard */,
+				043979BD224A9A6900C5C1AA /* Search.storyboard */,
+				043979B9224A991600C5C1AA /* Home.storyboard */,
 				04ADEF9622463D1400F9E2EA /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
@@ -227,8 +236,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043979B8224A97D400C5C1AA /* TabBar.storyboard in Resources */,
 				04ADEF9822463D1400F9E2EA /* LaunchScreen.storyboard in Resources */,
 				04ADEF9522463D1400F9E2EA /* Assets.xcassets in Resources */,
+				043979BA224A991600C5C1AA /* Home.storyboard in Resources */,
+				043979BE224A9A6900C5C1AA /* Search.storyboard in Resources */,
 				042AFDB92248EF3C00409850 /* LoginCell.xib in Resources */,
 				04ADEFA0224644EE00F9E2EA /* Start.storyboard in Resources */,
 			);
