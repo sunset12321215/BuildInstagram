@@ -1,5 +1,5 @@
 //
-//  Login.swift
+//  Start.swift
 //  Instagram
 //
 //  Created by mac on 3/24/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Login {
+struct Start {
     let description: String
     let image: String
 }

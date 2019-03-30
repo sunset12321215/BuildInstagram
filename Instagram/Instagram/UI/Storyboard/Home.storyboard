@@ -10,21 +10,33 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="f2S-0N-G8j">
             <objects>
-                <viewController id="7tZ-xI-D92" sceneMemberID="viewController">
+                <viewController id="7tZ-xI-D92" customClass="HomeViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lPX-sg-W3C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Nhập đi" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PZt-dy-GTs">
+                                <rect key="frame" x="81" y="318" width="236" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Exd-IK-w6t"/>
                     </view>
                     <navigationItem key="navigationItem" id="CN8-Dt-g2q"/>
+                    <connections>
+                        <outlet property="textField" destination="PZt-dy-GTs" id="cn8-rr-lqg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wlX-U6-Kp1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-346" y="2054"/>
+            <point key="canvasLocation" x="524" y="1273.313343328336"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xaq-vH-SZM">
