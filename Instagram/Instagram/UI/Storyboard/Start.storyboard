@@ -175,12 +175,12 @@
                 <viewControllerPlaceholder storyboardName="TabBar" referencedIdentifier="TabBarID" id="tED-51-F5g" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JAa-ib-7Ig" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1312" y="309"/>
+            <point key="canvasLocation" x="1046" y="-124"/>
         </scene>
-        <!--LogInID-->
+        <!--LogInSignUpID-->
         <scene sceneID="0T1-Fi-eYt">
             <objects>
-                <viewControllerPlaceholder storyboardName="LogIn" referencedIdentifier="LogInID" id="NNv-aw-FeH" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="LogInSignUp" referencedIdentifier="LogInSignUpID" id="NNv-aw-FeH" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zzb-LA-yXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1146" y="-220"/>

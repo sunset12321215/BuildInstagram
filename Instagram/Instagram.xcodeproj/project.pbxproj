@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041E806F2250ACC90031F281 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 041E806E2250ACC90031F281 /* GoogleService-Info.plist */; };
 		0426F023224A18980070DCD9 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0426F022224A18980070DCD9 /* UIView+.swift */; };
 		042AFDB82248EF3C00409850 /* LoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AFDB62248EF3C00409850 /* LoginCell.swift */; };
 		042AFDB92248EF3C00409850 /* LoginCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042AFDB72248EF3C00409850 /* LoginCell.xib */; };
 		04334038224B60DF00466A80 /* HSUnderLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04334037224B60DF00466A80 /* HSUnderLineTextField.swift */; };
-		0434157B224B5DD300A4513A /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0434157A224B5DD300A4513A /* LogIn.storyboard */; };
+		0434157B224B5DD300A4513A /* LogInSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0434157A224B5DD300A4513A /* LogInSignUp.storyboard */; };
 		0434157D224B5E8600A4513A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0434157C224B5E8600A4513A /* LogInViewController.swift */; };
 		043979B8224A97D400C5C1AA /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043979B7224A97D400C5C1AA /* TabBar.storyboard */; };
 		043979BA224A991600C5C1AA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043979B9224A991600C5C1AA /* Home.storyboard */; };
 		043979BE224A9A6900C5C1AA /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043979BD224A9A6900C5C1AA /* Search.storyboard */; };
 		043979C6224AA0A600C5C1AA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043979C5224AA0A600C5C1AA /* HomeViewController.swift */; };
 		043F57BE2247B51B00413C8A /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F57BD2247B51B00413C8A /* Start.swift */; };
+		0440C41F2250F9FC00A9A3D3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440C41E2250F9FC00A9A3D3 /* SignUpViewController.swift */; };
 		04ADEF8E22463D1400F9E2EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADEF8D22463D1400F9E2EA /* AppDelegate.swift */; };
 		04ADEF9022463D1400F9E2EA /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADEF8F22463D1400F9E2EA /* StartViewController.swift */; };
 		04ADEF9522463D1400F9E2EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04ADEF9422463D1400F9E2EA /* Assets.xcassets */; };
@@ -28,17 +30,19 @@
 
 /* Begin PBXFileReference section */
 		0415BA2C22490AB6004949E4 /* Instagram-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Instagram-Bridging-Header.h"; sourceTree = "<group>"; };
+		041E806E2250ACC90031F281 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0426F022224A18980070DCD9 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		042AFDB62248EF3C00409850 /* LoginCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCell.swift; sourceTree = "<group>"; };
 		042AFDB72248EF3C00409850 /* LoginCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginCell.xib; sourceTree = "<group>"; };
 		04334037224B60DF00466A80 /* HSUnderLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSUnderLineTextField.swift; sourceTree = "<group>"; };
-		0434157A224B5DD300A4513A /* LogIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
+		0434157A224B5DD300A4513A /* LogInSignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogInSignUp.storyboard; sourceTree = "<group>"; };
 		0434157C224B5E8600A4513A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		043979B7224A97D400C5C1AA /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		043979B9224A991600C5C1AA /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		043979BD224A9A6900C5C1AA /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		043979C5224AA0A600C5C1AA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		043F57BD2247B51B00413C8A /* Start.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
+		0440C41E2250F9FC00A9A3D3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		04ADEF8A22463D1400F9E2EA /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ADEF8D22463D1400F9E2EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04ADEF8F22463D1400F9E2EA /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				04ADEF9F224644EE00F9E2EA /* Start.storyboard */,
-				0434157A224B5DD300A4513A /* LogIn.storyboard */,
+				0434157A224B5DD300A4513A /* LogInSignUp.storyboard */,
 				043979B7224A97D400C5C1AA /* TabBar.storyboard */,
 				043979B9224A991600C5C1AA /* Home.storyboard */,
 				043979BD224A9A6900C5C1AA /* Search.storyboard */,
@@ -123,6 +127,7 @@
 			children = (
 				04ADEF8F22463D1400F9E2EA /* StartViewController.swift */,
 				0434157C224B5E8600A4513A /* LogInViewController.swift */,
+				0440C41E2250F9FC00A9A3D3 /* SignUpViewController.swift */,
 				043979C5224AA0A600C5C1AA /* HomeViewController.swift */,
 			);
 			path = View;
@@ -131,6 +136,7 @@
 		0449F484224668FA0061A0A0 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				041E806E2250ACC90031F281 /* GoogleService-Info.plist */,
 				04ADEF8D22463D1400F9E2EA /* AppDelegate.swift */,
 				04ADEF9422463D1400F9E2EA /* Assets.xcassets */,
 				04ADEF9922463D1400F9E2EA /* Info.plist */,
@@ -248,8 +254,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0434157B224B5DD300A4513A /* LogIn.storyboard in Resources */,
+				0434157B224B5DD300A4513A /* LogInSignUp.storyboard in Resources */,
 				043979B8224A97D400C5C1AA /* TabBar.storyboard in Resources */,
+				041E806F2250ACC90031F281 /* GoogleService-Info.plist in Resources */,
 				04ADEF9822463D1400F9E2EA /* LaunchScreen.storyboard in Resources */,
 				04ADEF9522463D1400F9E2EA /* Assets.xcassets in Resources */,
 				043979BA224A991600C5C1AA /* Home.storyboard in Resources */,
@@ -287,13 +294,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Instagram/Pods-Instagram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -313,6 +326,7 @@
 				0434157D224B5E8600A4513A /* LogInViewController.swift in Sources */,
 				04ADEF8E22463D1400F9E2EA /* AppDelegate.swift in Sources */,
 				0426F023224A18980070DCD9 /* UIView+.swift in Sources */,
+				0440C41F2250F9FC00A9A3D3 /* SignUpViewController.swift in Sources */,
 				043979C6224AA0A600C5C1AA /* HomeViewController.swift in Sources */,
 				04334038224B60DF00466A80 /* HSUnderLineTextField.swift in Sources */,
 			);
