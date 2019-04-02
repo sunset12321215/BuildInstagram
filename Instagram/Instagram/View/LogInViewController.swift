@@ -22,9 +22,18 @@ final class LogInViewController: UIViewController {
     }
     
     @IBAction func signInButton(_ sender: Any) {
+        ProgressHUD.show("Please Wait...", interaction: false)
         Auth.auth().signIn(withEmail: emailTextField.text ?? "", password: passWordTextField.text ?? "") { (user, error) in
-            guard user != nil else { return }
+            guard user != nil else {
+                ProgressHUD.showError("Email or PassWord is not valid")
+                return
+            }
+            ProgressHUD.showSuccess("Success")
             self.performSegue(withIdentifier: "gotoMain", sender: self)
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
 }

@@ -24,8 +24,13 @@ final class SignUpViewController: UIViewController {
     
     @IBAction func signupButton(_ sender: Any) {
         Auth.auth().createUser(withEmail: emailTextField.text ?? "", password: passwordTextField.text ?? "") { authResult, error in
-            guard error != nil else { return }
+            guard error != nil else {
+                return }
             self.backToPrevious(nil)
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
 }
