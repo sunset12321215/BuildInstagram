@@ -8,22 +8,24 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+final class SignUpViewController: UIViewController {
+    
+    @IBOutlet private weak var emailTextField: HSUnderLineTextField!
+    @IBOutlet private weak var passwordTextField: HSUnderLineTextField!
+    @IBOutlet private weak var passwordConfirmTextField: HSUnderLineTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    @IBAction func backToPrevious(_ sender: Any) {
+    @IBAction func backToPrevious(_ sender: Any?) {
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func signupButton(_ sender: Any) {
-        Auth.auth().createUser(withEmail: "sunset@gmail.com", password: "Cuong2312414") { authResult, error in
-            guard error != nil else {
-                return
-            }
-            print(error?.localizedDescription)
+        Auth.auth().createUser(withEmail: emailTextField.text ?? "", password: passwordTextField.text ?? "") { authResult, error in
+            guard error != nil else { return }
+            self.backToPrevious(nil)
         }
     }
 }

@@ -46,7 +46,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="tED-51-F5g" kind="presentation" id="dIQ-sp-XZB"/>
+                                    <action selector="signInButton:" destination="t3n-IJ-1LI" eventType="touchUpInside" id="9Zo-UC-m6E"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reC-3W-ozf" userLabel="Back">
@@ -166,6 +166,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nl1-Gk-M0k"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="pXX-fq-acL" id="vrz-Wb-wfy"/>
+                        <outlet property="passWordTextField" destination="Kae-6E-Zyi" id="1fT-8g-Rl6"/>
+                        <segue destination="tED-51-F5g" kind="presentation" identifier="gotoMain" id="R7g-xW-tLJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F3F-mG-t2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -177,7 +182,7 @@
                 <viewControllerPlaceholder storyboardName="TabBar" referencedIdentifier="TabBarID" id="tED-51-F5g" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JAa-ib-7Ig" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1989" y="-81"/>
+            <point key="canvasLocation" x="1986" y="243"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="3q2-gw-xu0">
@@ -342,13 +347,22 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oU5-vY-E2J"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="UrH-ic-Dsh" id="41U-8Y-U8a"/>
+                        <outlet property="passwordConfirmTextField" destination="6GQ-c5-PzX" id="lpE-ha-1A2"/>
+                        <outlet property="passwordTextField" destination="DnI-Ip-mD0" id="73U-cM-YBg"/>
+                        <segue destination="tED-51-F5g" kind="presentation" identifier="gotoMain" id="S2N-Of-kgH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UoT-pH-iDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2437.5999999999999" y="-181.0344827586207"/>
+            <point key="canvasLocation" x="2548" y="-191"/>
         </scene>
     </scenes>
     <resources>
         <image name="Back" width="19" height="12"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="R7g-xW-tLJ"/>
+    </inferredMetricsTieBreakers>
 </document>
